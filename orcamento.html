@@ -1,0 +1,172 @@
+
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head> 	
+
+		<title>Unidev - Home Page</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+		<!--jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.mask.min.js"/></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+<script type="text/javascript" src="assets/js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="assets/js/jquery.maskedinput-1.1.4.pack.js"/></script>
+
+
+
+
+	</head>
+	<body class="is-preload">
+						
+		<!-- Nav -->
+		<nav id="nav">
+			<div class="container">
+			<img src="images/logo-medio-branco-unidev.png" id="logopopi" class="image fit"/>
+
+				<div id="responsive-menu">
+					<a href="javascript:;"><i class="fa fa-bars fa-2x"></i></a>
+				</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Projetos</a></li>
+					<li><a href="index.html">Sobre nós</a></li>					
+					<li><a href="index.html">Contato</a></li>
+					<li><a href="news.html">News</a></li>
+					<li class="separator">|</li>
+					<li><a href="#" id="central"> Faça seu orçamento </a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+	
+
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4-orcamento">
+				<div class="container medium">
+					<header>
+					
+						<h2 id="orcamento">Preencha os campos e entraremos em contato</h2>
+						<p id="orcamento">Lembre-se de especificar de fato o software irá fazer.</p>
+						
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form action="formulario.php" method="POST" onsubmit="return verificar_form(this)">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="nome" id="nome" placeholder="Nome" required>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="email" name="email" id="email" placeholder="Email" required>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="subject" id="subject" placeholder="Assunto" required>
+									</div>
+									<!--<div class="col-12">
+										<input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+									</div> 
+									<div class="col-6 col-12-small">											
+										<input name="cpf" type="text" id="cpf" placeholder="CPF" required>										
+									</div> -->
+																
+										
+									<div class="col-6 col-12-small">
+										<input type="text" name="txttelefone" id="txttelefone" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4,5}" placeholder="Telefone" required>				 
+									<script type="text/javascript">$("#txttelefone").mask("(00) 0000-00009");</script>
+										
+									</div>
+									<div class="col-12">
+										<textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="reset" value="Apagar dados" class="alt" /></li>
+											<li><input type="submit" value="Enviar mensagem" /></li>
+											</form>
+										</ul>
+									</div>
+								</div>
+							
+						</div>
+					<div class="col-12">
+							<hr>
+							
+							<article class="dados style5">
+									<!--
+						<div id="nossosdados">	
+							<h3> Nosso endereço</h3>
+					<ul>							
+							<li>Av. Guedner, N° -- . Faculdade Unicesumar - sala -- Bloco ** - Maringá/PR</li><li>(44) 0000-0000/ (44) 9.0000-0000</li> -->
+						<!--	<li><a href="downloads.html">Downloads.</a> </li>	-->						 
+					<!--		<li><iframe class="facebook" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpopitelecom&width=450&layout=standard&action=like&size=small&show_faces=true&share=false&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
+							</li>								
+					</ul> 
+							</article>
+							 
+						</div>						
+					</div>
+				</div>
+				<br>	
+				<h3 id="orcamento">Encontre-nos em ...</h3>
+							<ul class="social">
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+
+							<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+								
+								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+							<!--	<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li> -->
+
+								<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+
+							<!--	<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li> --> 
+								
+							<!--	<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li> -->
+								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<!--	<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li> -->
+								<li><a href="#" class="icon fa-skype"><span class="label">Skype</span></a></li>
+							<!--	<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li> -->
+								<li><a href="#" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+							<!--	<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li> -->
+							<!--	<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li> --> 
+							<!--	<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>  -->
+								
+							</ul>
+							<hr />
+						</div>
+					</div>			
+				
+						
+			
+
+  	
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+
+
+
+
+	</body>
+</html>
